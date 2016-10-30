@@ -1,0 +1,52 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "ucai.cn.fulishe"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile files('libs/gson-2.7.jar')
+    compile files('libs/okhttp-3.2.0.jar')
+    compile files('libs/okio-1.9.0.jar')
+    compile files('libs/android-support-v7-gridlayout.jar')
+    compile 'com.android.support:appcompat-v7:23.4.0'
+    compile 'com.android.support:recyclerview-v7:23.4.0'
+    compile 'com.android.support:support-v4:23.4.0'
+    compile 'com.jakewharton:butterknife:7.0.1'
+    compile files('libs/ShareSDK-Core-2.7.8.jar')
+    compile files('libs/ShareSDK-Email-2.7.8.jar')
+    compile files('libs/ShareSDK-QQ-2.7.8.jar')
+    compile files('libs/ShareSDK-QZone-2.7.8.jar')
+    compile files('libs/ShareSDK-SinaWeibo-2.7.8.jar')
+    compile files('libs/ShareSDK-TencentWeibo-2.7.8.jar')
+    compile files('libs/ShareSDK-Wechat-2.7.8.jar')
+    compile files('libs/ShareSDK-Wechat-Core-2.7.8.jar')
+    compile files('libs/ShareSDK-Wechat-Favorite-2.7.8.jar')
+    compile files('libs/ShareSDK-Wechat-Moments-2.7.8.jar')
+    compile files('libs/MobCommons-2016.1020.1028.jar')
+    compile files('libs/MobTools-2016.1020.1028.jar')
+}
+
+
+
+
+
+
+

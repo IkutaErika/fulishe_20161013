@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/blue"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+<ImageView
+    android:id="@+id/iv_category_item"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="100dp"
+    android:layout_centerVertical="true"
+    android:src="@mipmap/goods_thumb"
+    />
+    <TextView
+        android:id="@+id/tv_category_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_category_item"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_centerVertical="true"
+        android:text="防晒"
+        android:textSize="20dp"
+        android:textAppearance="@style/Base.AlertDialog.AppCompat"
+        />
+
+</RelativeLayout>
