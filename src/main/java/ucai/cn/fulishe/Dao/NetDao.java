@@ -196,8 +196,6 @@ public class NetDao {
               .addParam(I.Cart.USER_NAME,username)
               .targetClass(CartBean[].class)
                 .execute(onCompleteListener);
-
-
     }
 
     public static void deletegoods(Context mcontext, int goodsid, OkHttpUtils.OnCompleteListener<MessageBean> onCompleteListener) {

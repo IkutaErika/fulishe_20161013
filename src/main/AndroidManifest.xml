@@ -39,7 +39,6 @@
         <activity android:name=".activity.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
@@ -269,6 +268,17 @@
             android:hardwareAccelerated="false"
             android:theme="@style/EbpayThemeActivit"
             android:windowSoftInputMode="stateHidden" />
+
+        <!-- 壹收款 -->
+        <activity
+            android:name="com.pingplusplus.libone.PayActivity"
+            android:configChanges="orientation|screenSize"
+            android:theme="@android:style/Theme.Translucent"
+            android:label="@string/pingpp_title_activity_pay"/>
+        <activity
+            android:name="com.pingplusplus.libone.PaySuccessActivity"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/pingpp_title_activity_pay_sucessed"/>
     </application>
 
 </manifest>

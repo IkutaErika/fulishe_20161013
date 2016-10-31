@@ -4,8 +4,7 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context="ucai.cn.fulishe.activity.Bought">
+     tools:context="ucai.cn.fulishe.activity.Bought">
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="40dp">
@@ -48,7 +47,6 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
            android:layout_toRightOf="@id/tv_bought_man"
-            android:background="@null"
             android:textAppearance="@style/Base.AlertDialog.AppCompat"
             />
     </RelativeLayout>
@@ -74,9 +72,7 @@
             android:layout_toRightOf="@id/tv_bought_number"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:textSize="20sp"
-            android:background="@null"
             android:inputType="phone"
             android:textAppearance="@style/Base.AlertDialog.AppCompat"
             />
@@ -127,7 +123,6 @@
             android:layout_height="wrap_content"
             android:textSize="20sp"
            android:layout_toRightOf="@id/tv_bought_street"
-            android:background="@null"
             android:textAppearance="@style/Base.AlertDialog.AppCompat"
             />
     </RelativeLayout>

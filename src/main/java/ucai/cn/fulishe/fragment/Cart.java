@@ -59,6 +59,8 @@ public class Cart extends Fragment implements CartAdapter.updateCartReceiver {
     TextView tvCartOffText;
     CartAdapter.updateCartReceiver receiver;
     int prices;
+    Map<Integer,String> map_name=new HashMap<>();
+    Map<Integer,Integer> map_price=new HashMap<>();
     public Cart() {
         // Required empty public constructor
     }
@@ -113,6 +115,8 @@ public class Cart extends Fragment implements CartAdapter.updateCartReceiver {
                     Matcher m2 = p.matcher(mcartlist.get(i).getGoods().getRankPrice().toString());
                     count += Integer.parseInt(m.replaceAll("").trim()) * map_count.get(mcartlist.get(i).getGoods().getGoodsName());
                     offcount += Integer.parseInt(m2.replaceAll("").trim()) * map_count.get(mcartlist.get(i).getGoods().getGoodsName());
+                    map_name.put(i,mcartlist.get(i).getGoods().getGoodsName());
+                    map_price.put(i,map_count.get(mcartlist.get(i).getGoods().getGoodsName()));
                 }
                 else {
                     count+=0;
@@ -120,7 +124,7 @@ public class Cart extends Fragment implements CartAdapter.updateCartReceiver {
                 }
                 tvCartTotal.setText(count + "");
                 tvCartOff.setText(count - offcount + "");
-                prices=count-offcount;
+                prices=count;
 
             }
         } else {
