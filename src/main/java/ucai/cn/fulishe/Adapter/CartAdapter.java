@@ -47,7 +47,6 @@ public class CartAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     Map<String,Integer> count_pass=new HashMap<>();
     Map<String,Integer> count_kong=new HashMap<>();
     updateCartReceiver receiver;
-   boolean ischecked=false;
     public void setReceiver(updateCartReceiver receiver) {
         this.receiver = receiver;
     }
